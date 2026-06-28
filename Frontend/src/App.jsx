@@ -9,7 +9,9 @@ function App() {
 
   return (
     <>
-     
+      <header>
+        <h1>Panda Bear Academy</h1>
+      </header>
     </>
   )
 }
