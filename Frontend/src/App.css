@@ -17,7 +17,6 @@ header {
   max-width: 900px;
   margin: 0 auto;
   aspect-ratio: 16 / 9;
-  background: #000;
   border-radius: 12px;
   overflow: hidden;
 }

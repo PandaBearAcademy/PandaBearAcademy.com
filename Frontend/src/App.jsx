@@ -1,8 +1,23 @@
 import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 import ReactPlayer from 'react-player'
 import './App.css'
 
 function App() {
+  const [videos, setVideos] = useState([])
+
+  useEffect(() => {
+    for (let i = 0; i < 3; i++) {
+      setVideos(prev => [...prev,
+          <ReactPlayer
+            url=""
+            controls={true}
+            width="50%"
+            height="50%"
+          />])
+    }
+  }, [])
+
   return (
     <>
       <header>
@@ -13,13 +28,7 @@ function App() {
 
       <main className="page">
         <section className="video-section">
-          <ReactPlayer
-            url="https://www.youtube.com/watch?v=ZjXuTefizF0"
-            playing={false}
-            controls
-            width="100%"
-            height="100%"
-          />
+          {videos}
         </section>
       </main>
     </>
