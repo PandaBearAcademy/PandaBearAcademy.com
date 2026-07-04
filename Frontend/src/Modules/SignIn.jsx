@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from '../css/signIn.module.css';
+import googleLogo from '../assets/google.png';
+import facebookLogo from '../assets/facebook.png';
 
 export default function SignIn() {
   return (
@@ -11,17 +13,18 @@ export default function SignIn() {
           <p className={styles.copy}>
             Access your lessons, save progress, and keep building confidence with Panda Bear Academy.
           </p>
-          <div className={styles.highlightList}>
-            <span>Live lessons</span>
-            <span>Personal progress</span>
-            <span>Friendly support</span>
-          </div>
         </div>
 
         <div className={styles.formPanel}>
           <div className={styles.socialRow}>
-            <button type="button" className={styles.socialBtn}>Continue with Google</button>
-            <button type="button" className={styles.socialBtn}>Continue with Facebook</button>
+            <button type="button" className={styles.socialBtn}>
+              <img src={googleLogo} alt="Google" className={styles.socialIcon} />
+              <span>Continue with Google</span>
+            </button>
+            <button type="button" className={styles.socialBtn}>
+              <img src={facebookLogo} alt="Facebook" className={styles.socialIcon} />
+              <span>Continue with Facebook</span>
+            </button>
           </div>
 
           <div className={styles.divider}>
