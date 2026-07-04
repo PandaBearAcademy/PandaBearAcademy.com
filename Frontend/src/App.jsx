@@ -22,6 +22,7 @@ function App() {
       <header className="topbar">
         <Link to="/" className="brand">Panda Bear Academy</Link>
         <nav className="nav-links" aria-label="Primary navigation">
+          <Link to='/sign-in'>Sign In</Link>
           <Link to="/">Courses</Link>
           <Link to="/">Mission</Link>
           <Link to="/">Contact</Link>
@@ -44,24 +45,7 @@ function App() {
             </div>
           </div>
 
-          <div className="hero-card">
-            <div className="card-glow" />
-            <h3>Why learners choose us</h3>
-            <div className="stats-grid">
-              <div>
-                <strong>100+</strong>
-                <span>lessons</span>
-              </div>
-              <div>
-                <strong>24/7</strong>
-                <span>access</span>
-              </div>
-              <div>
-                <strong>0</strong>
-                <span>barriers</span>
-              </div>
-            </div>
-          </div>
+          
         </section>
 
         <section className="info-section">
