@@ -40,7 +40,7 @@
   margin: 0 0 0.9rem;
   font-size: clamp(1.8rem, 3vw, 2.5rem);
   line-height: 1.15;
-  color: #0f172a;
+  color: #172554;
 }
 
 .copy {
@@ -73,13 +73,13 @@
   border-radius: 14px;
   font-size: 1rem;
   background: #ffffff;
-  color: #111827;
+  color: #172554;
 }
 
 .input:focus {
   outline: none;
-  border-color: #111827;
-  box-shadow: 0 0 0 4px rgba(17, 24, 39, 0.1);
+  border-color: #172554;
+  box-shadow: 0 0 0 4px rgba(23, 37, 84, 0.1);
 }
 
 .btn {
@@ -97,9 +97,9 @@
 
 .primary {
   margin-top: 0.35rem;
-  background: #111827;
+  background: #172554;
   color: #ffffff;
-  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.15);
+  box-shadow: 0 10px 24px rgba(23, 37, 84, 0.15);
 }
 
 @media (max-width: 860px) {
