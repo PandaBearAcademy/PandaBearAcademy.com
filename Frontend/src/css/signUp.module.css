@@ -78,8 +78,8 @@
 
 .input:focus {
   outline: none;
-  border-color: #172554;
-  box-shadow: 0 0 0 4px rgba(23, 37, 84, 0.1);
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.12);
 }
 
 .socialBtn {
@@ -101,14 +101,14 @@
 
 .socialBtn:hover {
   transform: translateY(-1px);
-  border-color: #9ca3af;
+  border-color: #1d4ed8;
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
 }
 
 .socialBtn:focus-visible {
   outline: none;
-  border-color: #172554;
-  box-shadow: 0 0 0 4px rgba(23, 37, 84, 0.12);
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.14);
 }
 
 .socialBtn img {
@@ -132,9 +132,9 @@
 
 .primary {
   margin-top: 0.35rem;
-  background: #172554;
+  background: linear-gradient(135deg, #172554 0%, #1d4ed8 100%);
   color: #ffffff;
-  box-shadow: 0 10px 24px rgba(23, 37, 84, 0.15);
+  box-shadow: 0 12px 24px rgba(23, 37, 84, 0.18);
 }
 
 @media (max-width: 860px) {
