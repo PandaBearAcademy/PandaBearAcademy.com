@@ -26,7 +26,7 @@ function App() {
           <Link to="/courses">Courses</Link>
           <Link to="/">Mission</Link>
           <Link to="/">Contact</Link>
-          <Link to="/" className="nav-cta">Join Free</Link>
+          <Link to="/sign-up" className="nav-cta">Join Free</Link>
         </nav>
       </header>
 
