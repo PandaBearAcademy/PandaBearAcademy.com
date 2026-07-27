@@ -48,7 +48,7 @@ export default function Courses() {
     <div className={styles.page}>
       <div className={styles.shell}>
         <header className={styles.header}>
-          <div className={styles.brandBlock} onClick={() => {navigate('/')}}>
+          <div className={styles.brandBlock} onClick={() => navigate('/')}>
             <div className={styles.brandBadge}>PB</div>
             <div>
               <p className={styles.eyebrow}>Learning dashboard</p>
