@@ -31,6 +31,9 @@
   align-items: center;
   gap: 1rem;
 }
+.brandBlock:hover{
+  cursor: pointer;
+}
 
 .brandBadge {
   width: 3rem;
