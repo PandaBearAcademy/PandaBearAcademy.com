@@ -6,12 +6,17 @@ import App from './App.jsx'
 import SignIn from './Modules/SignIn.jsx'
 import SignUp from './Modules/SignUp.jsx'
 import Courses from './Modules/Courses.jsx'
+import UserHome from './Modules/UserHome.jsx'
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "home",
+    element: <UserHome />,
   },
   {
     path: "sign-in",

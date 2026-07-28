@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../css/courses.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const enrolledCourses = [
   { title: 'Calculus', description: 'Limits, derivatives, and real-world applications', icon: '∫' },
@@ -43,11 +43,12 @@ const courseGroups = [
 ];
 
 export default function Courses() {
+  const navigate = useNavigate();
   return (
     <div className={styles.page}>
       <div className={styles.shell}>
         <header className={styles.header}>
-          <div className={styles.brandBlock}>
+          <div className={styles.brandBlock} onClick={() => navigate('/')}>
             <div className={styles.brandBadge}>PB</div>
             <div>
               <p className={styles.eyebrow}>Learning dashboard</p>

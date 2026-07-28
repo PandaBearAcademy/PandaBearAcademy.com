@@ -31,6 +31,9 @@
   align-items: center;
   gap: 1rem;
 }
+.brandBlock:hover{
+  cursor: pointer;
+}
 
 .brandBadge {
   width: 3rem;
@@ -163,6 +166,7 @@
 }
 
 .courseCard:hover {
+  cursor: pointer;
   transform: translateY(-2px);
   box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
 }
