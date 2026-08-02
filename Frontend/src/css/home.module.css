@@ -55,3 +55,21 @@
   color: #4b5563;
   font-weight: 700;
 }
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 2rem;
+}
+
+.courseCard {
+  width: 400px;
+  height: 400px;
+  border-radius: 0.5rem;
+  background: #374bff;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+}
