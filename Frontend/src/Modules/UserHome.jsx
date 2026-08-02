@@ -5,7 +5,7 @@ export default function UserHome() {
   const navigate = useNavigate();
   return (
     <div className={styles.page}>
-        <header>
+        <header className={styles.header}>
             <div className={styles.brandBlock} onClick={() => navigate('/')}>
                 <div className={styles.brandBadge}>PB</div>
                 <div>
@@ -50,9 +50,9 @@ export default function UserHome() {
                     </div>
                 </div>
                 <div className={styles.courseWidgets}>
-                    <button className={styles.courseWidget}></button>
-                    <button className={styles.courseWidget}></button>
-                    <button className={styles.courseWidget}></button>
+                    <button className={styles.courseWidget}>🎂</button>
+                    <button className={styles.courseWidget}>🎂</button>
+                    <button className={styles.courseWidget}>🎂</button>
                 </div>
             </section>
         </main>
