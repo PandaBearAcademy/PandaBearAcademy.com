@@ -22,7 +22,7 @@ export default function UserHome() {
             <section className={styles.section}>
                 <div className={styles.searchBar}>
                     <input type="text" placeholder="What do you want to learn?" />
-                    <button>Search</button>
+                    <button>🔍</button>
                 </div>
                 <div className={styles.streak}>
                     <div className={styles.streakBadge}>
