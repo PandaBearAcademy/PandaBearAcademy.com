@@ -29,8 +29,17 @@ export default function UserHome() {
                     <div>
                         <h1>0 🔥</h1>
                     </div>
-                    <div></div>
-                    <div></div>
+                    <p>Do 1 lesson to start a streak!!</p>
+                    <div>
+                        <p>S🔥</p>
+                        <p>M🔥</p>
+                        <p>T🔥</p>
+                        <p>W🔥</p>
+                    </div>
+                </div>
+                <div>
+                    <h3>🔒</h3>
+                    <h3>Unlock leagues</h3>
                 </div>
             </section>
         </main>
