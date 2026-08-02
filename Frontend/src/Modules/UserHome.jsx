@@ -13,10 +13,11 @@ export default function UserHome() {
                     <h1>Panda Bear Academy</h1>
                 </div>
 
-                <div className={styles.headerlinks}>
-                    <Link to="/home">Home</Link>
-                    <Link to="/courses">Courses</Link>
-                </div>
+            </div>
+
+            <div className={styles.headerlinks}>
+                <Link to="/home">Home</Link>
+                <Link to="/courses">Courses</Link>
             </div>
         </header>
         <main className={styles.content}>
@@ -26,11 +27,32 @@ export default function UserHome() {
                     <button>Search</button>
                 </div>
                 <div className={styles.streak}>
-                    <div>
+                    <div className={styles.streakBadge}>
                         <h1>0 🔥</h1>
                     </div>
-                    <div></div>
-                    <div></div>
+                    <p>Do 1 lesson to start a streak!!</p>
+                    <div className={styles.streakDays}>
+                        <p>S🔥</p>
+                        <p>M🔥</p>
+                        <p>T🔥</p>
+                        <p>W🔥</p>
+                    </div>
+                </div>
+                <div className={styles.leagues}>
+                    <h3>🔒</h3>
+                    <h3>Unlock leagues</h3>
+                </div>
+            </section>
+            <section className={styles.section}>
+                <div className={styles.courseList}>
+                    <div className={styles.courseCard}>
+
+                    </div>
+                </div>
+                <div className={styles.courseWidgets}>
+                    <button className={styles.courseWidget}></button>
+                    <button className={styles.courseWidget}></button>
+                    <button className={styles.courseWidget}></button>
                 </div>
             </section>
         </main>
