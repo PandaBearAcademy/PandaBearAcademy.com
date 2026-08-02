@@ -26,18 +26,18 @@ export default function UserHome() {
                     <button>Search</button>
                 </div>
                 <div className={styles.streak}>
-                    <div>
+                    <div className={styles.streakBadge}>
                         <h1>0 🔥</h1>
                     </div>
                     <p>Do 1 lesson to start a streak!!</p>
-                    <div>
+                    <div className={styles.streakDays}>
                         <p>S🔥</p>
                         <p>M🔥</p>
                         <p>T🔥</p>
                         <p>W🔥</p>
                     </div>
                 </div>
-                <div>
+                <div className={styles.leagues}>
                     <h3>🔒</h3>
                     <h3>Unlock leagues</h3>
                 </div>
