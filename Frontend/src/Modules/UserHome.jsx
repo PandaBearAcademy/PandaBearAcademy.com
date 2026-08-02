@@ -12,9 +12,7 @@ export default function UserHome() {
                     <p className={styles.eyebrow}>Learning dashboard</p>
                     <h1>Panda Bear Academy</h1>
                 </div>
-
             </div>
-
             <div className={styles.headerlinks}>
                 <Link to="/home">Home</Link>
                 <Link to="/courses">Courses</Link>
