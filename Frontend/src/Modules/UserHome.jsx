@@ -5,16 +5,14 @@ export default function UserHome() {
   const navigate = useNavigate();
   return (
     <div className={styles.page}>
-        <header>
+        <header className={styles.header}>
             <div className={styles.brandBlock} onClick={() => navigate('/')}>
                 <div className={styles.brandBadge}>PB</div>
                 <div>
                     <p className={styles.eyebrow}>Learning dashboard</p>
                     <h1>Panda Bear Academy</h1>
                 </div>
-
             </div>
-
             <div className={styles.headerlinks}>
                 <Link to="/home">Home</Link>
                 <Link to="/courses">Courses</Link>
@@ -24,7 +22,7 @@ export default function UserHome() {
             <section className={styles.section}>
                 <div className={styles.searchBar}>
                     <input type="text" placeholder="What do you want to learn?" />
-                    <button>Search</button>
+                    <button>🔍</button>
                 </div>
                 <div className={styles.streak}>
                     <div className={styles.streakBadge}>
@@ -50,9 +48,9 @@ export default function UserHome() {
                     </div>
                 </div>
                 <div className={styles.courseWidgets}>
-                    <button className={styles.courseWidget}></button>
-                    <button className={styles.courseWidget}></button>
-                    <button className={styles.courseWidget}></button>
+                    <button className={styles.courseWidget}>🎂</button>
+                    <button className={styles.courseWidget}>🎂</button>
+                    <button className={styles.courseWidget}>🎂</button>
                 </div>
             </section>
         </main>
