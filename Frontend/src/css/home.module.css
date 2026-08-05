@@ -61,6 +61,7 @@
   flex-direction: row;
   align-items:flex-start;
   justify-content: center;
+  height:fit-content;
   margin-top: 50px;
   gap: 5.25rem;
   padding: 2rem;
@@ -69,6 +70,7 @@
 .section {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     gap: 1rem;
 }
 
@@ -106,6 +108,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items:flex-start;
   height: 300px;
   border: 2px solid #d1d5db;
   border-radius: 20px;
@@ -115,6 +118,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  width: 100%;
+}
+
+.leagues{
+  border: 2px solid #d1d5db;
+  border-radius: 20px;
 }
 
 .courseCard {
