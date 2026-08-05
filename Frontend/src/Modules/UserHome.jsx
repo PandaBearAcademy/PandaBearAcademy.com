@@ -27,8 +27,9 @@ export default function UserHome() {
                 <div className={styles.streak}>
                     <div className={styles.streakBadge}>
                         <h1>0 🔥</h1>
+                        <p>Do 1 lesson to start a streak!!</p>
                     </div>
-                    <p>Do 1 lesson to start a streak!!</p>
+                    
                     <div className={styles.streakDays}>
                         <p>S🔥</p>
                         <p>M🔥</p>

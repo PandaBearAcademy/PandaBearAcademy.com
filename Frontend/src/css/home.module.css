@@ -81,7 +81,7 @@
     width: 375px;
     padding: 0.8rem;
     border-radius: 1.5rem;
-    border: 1px solid #d1d5db;
+    border: 2px solid #d1d5db;
     background: #ffffff;
     font-size: 1rem;
 }
@@ -95,7 +95,7 @@
 
 .searchBar:hover {
     cursor: text;
-    border: 2px solid #d1d5db;
+    border: 2px solid #a5a7a8;
 }
 .searchBar button {
     border: none;
@@ -114,6 +114,15 @@
   border-radius: 20px;
 }
 
+.streakBadge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  
+  width: 100%;
+}
+
 .streakDays{
   display: flex;
   flex-direction: row;
@@ -122,13 +131,17 @@
 }
 
 .leagues{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  height: 100px;
   border: 2px solid #d1d5db;
   border-radius: 20px;
 }
 
 .courseCard {
   width: 450px;
-  height: 520px;
+  height: 480px;
   border-radius: 0.5rem;
   background: #374bff;
   box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
