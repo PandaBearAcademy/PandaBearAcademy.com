@@ -14,8 +14,8 @@ export default function UserHome() {
                 </div>
             </div>
             <div className={styles.headerlinks}>
-                <Link to="/home">Home</Link>
-                <Link to="/courses">Courses</Link>
+                <Link to="/home" className={styles.headerlink}>Home</Link>
+                <Link to="/courses" className={styles.headerlink}>Courses</Link>
             </div>
         </header>
         <main className={styles.content}>
@@ -27,8 +27,9 @@ export default function UserHome() {
                 <div className={styles.streak}>
                     <div className={styles.streakBadge}>
                         <h1>0 🔥</h1>
+                        <p>Do 1 lesson to start a streak!!</p>
                     </div>
-                    <p>Do 1 lesson to start a streak!!</p>
+                    
                     <div className={styles.streakDays}>
                         <p>S🔥</p>
                         <p>M🔥</p>

@@ -1,14 +1,14 @@
 .page {
   min-height: 100vh;
   padding: 0;
-  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  background: linear-gradient(135deg, #fcfcfc 0%, #fdfdfd 100%);
   color: #111827;
 }
 
 
 .header {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content:baseline;
   align-items:flex-end;
   gap: 2rem;
@@ -22,7 +22,18 @@
 
 .headerlinks {
     display: flex;
-    gap: 10px
+    height: 100%;
+    border: 2px solid #d1d5db;
+    gap: 25px
+}
+
+.headerlink {
+    width: 100%;
+    text-decoration: none;
+    color: #babcbe;
+    border-bottom: 2px solid #d1d5db;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .brandBlock {
@@ -59,8 +70,10 @@
 .content {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items:flex-start;
   justify-content: center;
+  height:fit-content;
+  margin-top: 50px;
   gap: 5.25rem;
   padding: 2rem;
 }
@@ -68,6 +81,7 @@
 .section {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     gap: 1rem;
 }
 
@@ -75,10 +89,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 300px;
+    width: 375px;
     padding: 0.8rem;
     border-radius: 1.5rem;
-    border: 1px solid #d1d5db;
+    border: 2px solid #d1d5db;
     background: #ffffff;
     font-size: 1rem;
 }
@@ -92,7 +106,7 @@
 
 .searchBar:hover {
     cursor: text;
-    border: 2px solid #d1d5db;
+    border: 2px solid #a5a7a8;
 }
 .searchBar button {
     border: none;
@@ -101,14 +115,50 @@
     font-size: 1rem;
 }
 
+.streak {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items:flex-start;
+  height: 300px;
+  border: 2px solid #d1d5db;
+  border-radius: 20px;
+}
+
+.streakBadge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+
+  width: 100%;
+}
+
+.streakDays{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.leagues{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  height: 100px;
+  border: 2px solid #d1d5db;
+  border-radius: 20px;
+}
+
 .courseCard {
   width: 450px;
-  height: 520px;
+  height: 480px;
   border-radius: 0.5rem;
   background: #374bff;
   box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
   overflow: hidden;
 }
+
 
 .courseWidgets{
     display: flex;
