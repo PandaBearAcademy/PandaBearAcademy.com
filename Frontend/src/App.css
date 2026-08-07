@@ -1,6 +1,6 @@
 .app-shell {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  background: rgba(255, 255, 255, 0.95);
   color: #172554;
 }
 

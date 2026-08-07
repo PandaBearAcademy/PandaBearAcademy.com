@@ -1,7 +1,6 @@
 .page {
   min-height: 100vh;
   padding: 0;
-  background: linear-gradient(135deg, #fcfcfc 0%, #fdfdfd 100%);
   color: #111827;
 }
 
@@ -101,7 +100,6 @@
     padding: 0.8rem;
     border-radius: 1.5rem;
     border: 2px solid #d1d5db;
-    background: #ffffff;
     font-size: 1rem;
 }
 
@@ -110,6 +108,7 @@
     border: none;
     outline: none;
     font-size: 1rem;
+    
 }
 
 .searchBar:hover {
