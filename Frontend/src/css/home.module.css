@@ -11,7 +11,7 @@
   flex-direction: row;
   justify-content:baseline;
   align-items:flex-end;
-  gap: 2rem;
+  gap: 5rem;
   border-radius: 0;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(16px);
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: row;
     height: 100px;
-    gap: 25px
+    gap: 35px
 }
 
 .headerlink {
@@ -34,9 +34,14 @@
     width: 100%;
     text-decoration: none;
     color: #babcbe;
-    border-bottom: 2px solid #d1d5db;
     font-weight: 600;
     font-size: 1rem;
+}
+
+.headerlink:hover {
+    border-bottom: 2px solid #d1d5db;
+    color: #3e3e3f;
+    cursor: pointer;
 }
 
 .brandBlock {
