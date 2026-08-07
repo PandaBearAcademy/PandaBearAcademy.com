@@ -28,9 +28,9 @@
 
 .headerlink {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    gap: 1rem;
     width: 100%;
     text-decoration: none;
     color: #babcbe;
