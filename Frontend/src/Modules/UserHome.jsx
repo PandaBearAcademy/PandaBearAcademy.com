@@ -8,9 +8,9 @@ export default function UserHome() {
         <header className={styles.header}>
             <div className={styles.brandBlock} onClick={() => navigate('/')}>
                 <div className={styles.brandBadge}>PB</div>
-                <div>
+                <div className={styles.brandText}>
                     <p className={styles.eyebrow}>Learning dashboard</p>
-                    <h1>Panda Bear Academy</h1>
+                    <h1 >Panda Bear Academy</h1>
                 </div>
             </div>
             <div className={styles.headerlinks}>

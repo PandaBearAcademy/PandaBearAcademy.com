@@ -1,7 +1,8 @@
 .page {
   min-height: 100vh;
   padding: 0;
-  color: #111827;
+  background-color: #fefeff;
+  color: #fefeff;
 }
 
 
@@ -46,10 +47,17 @@
 .brandBlock {
   display: flex;
   align-items: center;
+  color: #454e5a;
   gap: 1rem;
 }
 .brandBlock:hover{
   cursor: pointer;
+}
+
+.brandText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .brandBadge {
@@ -65,12 +73,13 @@
   box-shadow: 0 12px 24px rgba(23, 37, 84, 0.2);
 }
 
+
 .eyebrow {
   margin: 0 0 0.25rem;
   font-size: 0.75rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: #4b5563;
+  color: #454e5a;
   font-weight: 700;
 }
 
@@ -89,6 +98,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    color: #454e5a;
     gap: 1rem;
 }
 
@@ -151,6 +161,7 @@
 .leagues{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items:center;
   height: 100px;
   border: 2px solid #d1d5db;
