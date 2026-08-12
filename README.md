@@ -1,35 +1,41 @@
 # Panda Bear Academy
 
-Panda Bear Academy is a frontend learning landing page built with React and Vite. It presents a modern education brand experience with hero messaging, course highlights, and clear calls to action.
+A modern frontend landing page for an education brand built with React and Vite.
+
+## Overview
+
+This repository contains the static frontend application for Panda Bear Academy. It showcases a responsive landing page with course highlights, user navigation, and a polished brand presentation.
 
 ## What this project includes
 
-- A React-based single-page interface
-- Vite-powered development and build pipeline
-- Client-side routing with React Router
-- ESLint support for code quality
-- A responsive homepage layout for an educational brand
+- React 19 single-page application
+- Vite 8 development and build tooling
+- Client-side navigation with React Router DOM
+- ESLint code quality checks
+- Responsive layout optimized for desktop and mobile
 
 ## Key features
 
-- Hero section with messaging, actions, and stats
-- Highlight cards for key offerings
-- Navigation and footer structure
-- Modern CSS styling and layout
+- Hero section with calls to action
+- Course and program highlight cards
+- Sign-in / sign-up pages
+- User home/dashboard placeholder
+- Modular CSS and component organization
 
 ## Tech stack
 
 - React 19
-- Vite 4/5/8 compatible setup
-- React Router DOM
-- ESLint
+- Vite 8
+- React Router DOM 7
+- ESLint 10
+- React Player
 
 ## Getting started
 
 ### Requirements
 
 - Node.js 20+ (recommended)
-- npm or yarn
+- npm
 
 ### Install dependencies
 
@@ -44,7 +50,7 @@ npm install
 npm run dev
 ```
 
-Then open the local URL shown in the terminal.
+Open the local URL shown in the terminal to view the app.
 
 ### Build for production
 
@@ -66,15 +72,17 @@ npm run lint
 
 ## Project structure
 
-- `Frontend/` – frontend application source, config, and assets
-- `Frontend/src/` – React components, styles, and router setup
-- `Frontend/index.html` – HTML entry point
-- `Frontend/package.json` – frontend scripts and dependencies
+- `Frontend/` – frontend application source and configuration
+- `Frontend/src/` – React components, styles, and assets
+- `Frontend/src/Modules/` – page components for courses, auth, and user home
+- `Frontend/public/` – static public assets
+- `Frontend/package.json` – frontend dependencies and npm scripts
 
 ## Notes
 
-This repository currently contains the static frontend layer for Panda Bear Academy. The landing page is designed for easy expansion into a full learning platform.
+The repo currently holds the frontend landing page only. The codebase is structured for easy extension into a full learning platform.
 
 ## License
 
 MIT
+
