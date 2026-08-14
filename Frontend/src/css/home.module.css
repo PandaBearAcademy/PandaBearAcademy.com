@@ -72,6 +72,7 @@
   align-items: center;
   color: #454e5a;
   gap: 1rem;
+  margin-left: 2rem;
 }
 .brandBlock:hover{
   cursor: pointer;
