@@ -18,7 +18,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1.4rem 2rem;
   border-radius: 0;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(16px);
@@ -26,10 +25,38 @@
   border-bottom: 1px solid #d1d5db;
 }
 
+.headerlinks {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  gap: 35px
+}
+
+.headerlink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  text-decoration: none;
+  color: #babcbe;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+
+.headerlink:hover {
+    border-bottom: 2px solid #d1d5db;
+    color: #3e3e3f;
+    cursor: pointer;
+}
+
+
 .brandBlock {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-left: 2rem;
 }
 .brandBlock:hover{
   cursor: pointer;

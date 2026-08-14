@@ -14,7 +14,7 @@ export default function UserHome() {
                 </div>
             </div>
             <div className={styles.headerlinks}>
-                <Link to="/home" className={styles.headerlink}><p>🏠</p> Home</Link>
+                <Link to="/home" className={styles.home} ><p>🏠</p> Home</Link>
                 <Link to="/courses" className={styles.headerlink}><p>📚</p> Courses</Link>
             </div>
         </header>
