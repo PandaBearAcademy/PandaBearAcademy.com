@@ -54,8 +54,12 @@ export default function Courses() {
               <p className={styles.eyebrow}>Learning dashboard</p>
               <h1>Panda Bear Academy</h1>
             </div>
+            <div className={styles.headerlinks}>
+              <Link to="/home" className={styles.headerlink} ><p>🏠</p> Home</Link>
+              <Link to="/courses" className={styles.headerlink}><p>📚</p> Courses</Link>
+            </div>
           </div>
-
+          
           <div className={styles.headerActions}>
             <div className={styles.starbits}>
               <span>★</span> 5
