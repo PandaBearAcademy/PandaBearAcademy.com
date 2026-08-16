@@ -51,11 +51,16 @@
     cursor: pointer;
 }
 
+.brandStuff{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
 
 .brandBlock {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 5rem;
   margin-left: 2rem;
 }
 .brandBlock:hover{
