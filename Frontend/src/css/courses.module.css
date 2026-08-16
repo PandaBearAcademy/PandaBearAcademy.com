@@ -44,6 +44,18 @@
   font-size: 1rem;
 }
 
+.courseLink{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-bottom: 2px solid #3e3e3f;
+  color: #3e3e3f;
+}
 
 .headerlink:hover {
     border-bottom: 2px solid #d1d5db;

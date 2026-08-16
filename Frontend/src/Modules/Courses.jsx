@@ -58,7 +58,7 @@ export default function Courses() {
             </div>
             <div className={styles.headerlinks}>
               <Link to="/home" className={styles.headerlink} ><p>🏠</p> Home</Link>
-              <Link to="/courses" className={styles.headerlink}><p>📚</p> Courses</Link>
+              <Link to="/courses" className={styles.courseLink}><p>📚</p> Courses</Link>
             </div>
           </div>
           
