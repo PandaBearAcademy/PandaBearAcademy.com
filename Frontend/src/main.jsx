@@ -11,11 +11,11 @@ import UserHome from './Modules/UserHome.jsx'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/landing-page",
     element: <App />,
   },
   {
-    path: "home",
+    path: "/home",
     element: <UserHome />,
   },
   {
