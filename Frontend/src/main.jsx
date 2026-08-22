@@ -7,9 +7,14 @@ import SignIn from './Modules/SignIn.jsx'
 import SignUp from './Modules/SignUp.jsx'
 import Courses from './Modules/Courses.jsx'
 import UserHome from './Modules/UserHome.jsx'
+import Root from './Modules/Root.jsx'
 
 
 const router = createBrowserRouter([
+  {
+    path: '/',
+    element:<Root />
+  },
   {
     path: "/landing-page",
     element: <App />,
