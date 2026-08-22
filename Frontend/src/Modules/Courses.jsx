@@ -1,12 +1,22 @@
+/** 
+ * Courses component for displaying available courses.
+ * In the future, this component can be expanded to include features such as
+ * course enrollment, progress tracking, and personalized recommendations.
+ * At the moment, it has a static number of courses offered listed with an array.
+ */
+
 import React from 'react';
 import styles from '../css/courses.module.css';
 import { Link, useNavigate } from 'react-router-dom';
 
+// Placeholder data for other courses, grouped by category, will be replaced with dynamic data in the future.
 const enrolledCourses = [
   { title: 'Calculus', description: 'Limits, derivatives, and real-world applications', icon: '∫' },
   { title: 'Linear Algebra', description: 'Vectors, matrices, and transformations', icon: '⚙' }
 ];
 
+
+// Placeholder data for other courses, grouped by category, will be replaced with dynamic data in the future.
 const courseGroups = [
   {
     title: 'Math',
