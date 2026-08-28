@@ -32,13 +32,14 @@ export default function Course() {
                 <main className={styles.content}>
                     <section className={styles.descriptionSection}>
                         <div className={styles.description}>
-                            
                             <h1 className={styles.courseTitle}>Course Title</h1>
                             <p className={styles.courseDescription}>This is a brief description of the course</p>
                         </div>
                     </section>
                     <section className={styles.lessonsSection}>
-
+                        <button className={styles.unitButton}>
+                            Unit 1
+                        </button>
                     </section>
                 </main>
             </div>
