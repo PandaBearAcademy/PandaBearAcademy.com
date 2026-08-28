@@ -6,6 +6,7 @@ import App from './App.jsx'
 import SignIn from './Modules/SignIn.jsx'
 import SignUp from './Modules/SignUp.jsx'
 import Courses from './Modules/Courses.jsx'
+import Course from './Modules/Course.jsx'
 import UserHome from './Modules/UserHome.jsx'
 import Root from './Modules/Root.jsx'
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "courses",
     element: <Courses />,
+  },
+  {
+    path: "courses/:courseId",
+    element: <Course />,
   }
 ]);
 
