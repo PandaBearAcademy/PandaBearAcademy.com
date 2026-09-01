@@ -54,6 +54,9 @@ const courseGroups = [
 
 export default function Courses() {
   const navigate = useNavigate();
+  const handleCourseClick = (courseTitle) => {
+    navigate(`/courses/${courseTitle.toLowerCase().replace(/\s+/g, '-')}`);
+  }
   return (
     <div className={styles.page}>
       <div className={styles.shell}>
@@ -88,7 +91,7 @@ export default function Courses() {
             </div>
             <div className={styles.courseGrid}>
               {enrolledCourses.map((course) => (
-                <article key={course.title} className={`${styles.courseCard} ${styles.featured}`}>
+                <article key={course.title} className={`${styles.courseCard} ${styles.featured}`} onClick={() => handleCourseClick(course.title)}>
                   <div className={styles.courseIcon}>{course.icon}</div>
                   <div className={styles.courseMeta}>
                     <h3>{course.title}</h3>
@@ -110,7 +113,7 @@ export default function Courses() {
                 <h3 className={styles.categoryTitle}>{group.title}</h3>
                 <div className={styles.categoryGrid}>
                   {group.courses.map((course) => (
-                    <article key={course.title} className={styles.courseCard}>
+                    <article key={course.title} className={styles.courseCard} onClick={() => handleCourseClick(course.title)}>
                       <div className={styles.courseIcon}>{course.icon}</div>
                       <div className={styles.courseMeta}>
                         <h3>{course.title}</h3>
