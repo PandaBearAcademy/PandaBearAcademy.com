@@ -13,7 +13,7 @@ export default function LevelStep({ level, isActive, isCompleted, onClick }) {
       className={`${styles.levelStep} ${isActive ? styles.active : ''} ${isCompleted ? styles.completed : ''}`}
       onClick={handleClick}
     >
-      
+      ⭐
     </div>
   );
 }

@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: #2563eb;
     border-radius: 50%;
     width: 70px;
@@ -12,5 +13,5 @@
 
 .levelStep:hover {
     cursor: pointer;
-    transform: scaleY(0.95);
+    transform: scaleY(0.90);
 }

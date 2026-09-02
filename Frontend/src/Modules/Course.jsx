@@ -2,6 +2,7 @@ import styles from '../css/course.module.css';
 import { Link, useNavigate } from 'react-router-dom';
 import React from 'react';
 import LevelStep from '../Components/LevelStep';
+import Unit from '../Components/Unit';
 
 
 export default function Course() {
@@ -38,11 +39,9 @@ export default function Course() {
                         </div>
                     </section>
                     <section className={styles.lessonsSection}>
-                        <button className={styles.unitButton}>
-                            Unit 1
-                        </button>
-                        <div className={styles.levelSteps}>
-                            <LevelStep level={1} isActive={false} isCompleted={true} />
+                        
+                        <div className={styles.stairCase}>
+                            <Unit unitNumber={1} isActive={true} isCompleted={false} onClick={(unitNumber) => console.log(`Unit ${unitNumber} clicked`)} />
                         </div>
                     </section>
                 </main>
