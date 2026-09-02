@@ -28,7 +28,7 @@ export default function Course() {
                         <div className={styles.starbits}>
                         <span>★</span> 5
                         </div>
-                        <button className={styles.optionsBtn}>Options</button>
+                        <button className={styles.optionsBtn}>Donate</button>
                     </div>
                 </header>
                 <main className={styles.content}>
