@@ -9,11 +9,16 @@ export default function LevelStep({ level, isActive, isCompleted, onClick }) {
   };
 
   return (
-    <div
-      className={`${styles.levelStep} ${isActive ? styles.active : ''} ${isCompleted ? styles.completed : ''}`}
-      onClick={handleClick}
-    >
-      ⭐
+    <>
+    <div className={styles.shadow}>
+      <div
+        className={`${styles.levelStep} ${isActive ? styles.active : ''} ${isCompleted ? styles.completed : ''}`}
+        onClick={handleClick}
+      >
+        ⭐
+      </div>
+      
     </div>
+    </>
   );
 }

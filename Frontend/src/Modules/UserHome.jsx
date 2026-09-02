@@ -17,7 +17,7 @@ export default function UserHome() {
                 <Link to="/home" className={styles.home} ><p>🏠</p> Home</Link>
                 <Link to="/courses" className={styles.headerlink}><p>📚</p> Courses</Link>
             </div>
-            <button className={styles.optionsBtn}>Donate</button>
+            
         </header>
         <main className={styles.content}>
             <section className={styles.section}>

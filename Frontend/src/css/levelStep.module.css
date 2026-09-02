@@ -7,11 +7,17 @@
     border-radius: 50%;
     width: 70px;
     height: 60px;
-    border-bottom: 8px solid #0745cc;
-    
+    transform: translateY(-10%);
 }
 
 .levelStep:hover {
     cursor: pointer;
-    transform: scaleY(0.90);
+    transform: translateY(-5%);
+}
+
+.shadow {
+    background-color: #37618b;
+    border-radius: 50%;
+    width: 70px;
+    height: 60px;
 }
