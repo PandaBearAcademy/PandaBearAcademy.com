@@ -16,7 +16,7 @@ export default function Unit({ unitNumber, isActive, isCompleted, onClick }) {
         <button className={styles.unitButton} onClick={handleClick}>
         Unit {unitNumber}
         </button>
-        
+        <LevelStep level={unitNumber} isActive={isActive} isCompleted={isCompleted} onClick={onClick} />
     </div>
   )
 }

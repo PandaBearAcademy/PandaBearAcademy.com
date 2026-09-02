@@ -1,0 +1,13 @@
+.unitButton {
+  width: 400px;
+  height: 65px;
+  border-radius: 1rem;
+  border: 2px  solid #1d4ed8;
+  border-bottom: 6px solid #1d4ed8;
+  background: white;
+
+}
+
+.unitButton:hover {
+  cursor: pointer;
+}
