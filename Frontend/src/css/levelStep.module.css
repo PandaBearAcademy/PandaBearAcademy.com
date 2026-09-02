@@ -2,15 +2,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: #2563eb;
     border-radius: 50%;
     width: 70px;
     height: 60px;
-    border-bottom: 8px solid #0745cc;
-    
+    transform: translateY(-10%);
 }
 
 .levelStep:hover {
     cursor: pointer;
-    transform: scaleY(0.95);
+    transform: translateY(-5%);
+}
+
+.shadow {
+    background-color: #37618b;
+    border-radius: 50%;
+    width: 70px;
+    height: 60px;
 }
