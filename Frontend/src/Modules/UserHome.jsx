@@ -1,13 +1,15 @@
 import React from 'react';
 import styles from '../css/home.module.css';
 import { Link, useNavigate } from 'react-router-dom';
+import logo from '../assets/logo.jpg';
+
 export default function UserHome() {
   const navigate = useNavigate();
   return (
     <div className={styles.page}>
         <header className={styles.header}>
             <div className={styles.brandBlock} onClick={() => navigate('/')}>
-                <div className={styles.brandBadge}>PB</div>
+                <img src={logo} alt="Panda Bear Academy Logo" className={styles.brandLogo} />
                 <div className={styles.brandText}>
                     <p className={styles.eyebrow}>Learning dashboard</p>
                     <h1 >Panda Bear Academy</h1>
