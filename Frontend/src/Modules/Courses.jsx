@@ -8,6 +8,7 @@
 import React from 'react';
 import styles from '../css/courses.module.css';
 import { Link, useNavigate } from 'react-router-dom';
+import logo from '../assets/logo.jpg';
 
 // Placeholder data for other courses, grouped by category, will be replaced with dynamic data in the future.
 const enrolledCourses = [
@@ -62,8 +63,8 @@ export default function Courses() {
       <div className={styles.shell}>
         <header className={styles.header}>
           <div className={styles.brandBlock} >
-            <div className={styles.brandStuff} onClick={() => navigate('/')}>
-              <div className={styles.brandBadge}>PB</div>
+            <div className={styles.brandStuff} onClick={() => navigate('/')}>         
+              <img src={logo} alt="Panda Bear Academy Logo" className={styles.brandLogo} />
               <div>
                 <p className={styles.eyebrow}>Learning dashboard</p>
                 <h1>Panda Bear Academy</h1>
