@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './App.css'
+import logo from './assets/PBA logo-transperant.png'
 
 function App() {
   const highlights = [
@@ -20,7 +21,10 @@ function App() {
   return (
     <div className="app-shell">
       <header className="topbar">
-        <Link to="/" className="brand">Panda Bear Academy</Link>
+        <Link to="/" className="brand">
+          <img src={logo} alt="Panda Bear Academy Logo" className="brandLogo" />
+          Panda Bear Academy
+        </Link>
         <nav className="nav-links" aria-label="Primary navigation">
           <Link to='/sign-in'>Sign In</Link>
           <Link to="/courses">Courses</Link>

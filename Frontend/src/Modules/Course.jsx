@@ -1,7 +1,6 @@
 import styles from '../css/course.module.css';
 import { Link, useNavigate } from 'react-router-dom';
 import React from 'react';
-import LevelStep from '../Components/LevelStep';
 import Unit from '../Components/Unit';
 
 
