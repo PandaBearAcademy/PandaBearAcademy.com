@@ -14,12 +14,22 @@
 }
 
 .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #172554;
   text-decoration: none;
+}
+
+.brandLogo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 16px;
+  object-fit: cover;
 }
 
 .nav-links {
