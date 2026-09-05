@@ -2,34 +2,14 @@ import styles from '../css/course.module.css';
 import { Link, useNavigate } from 'react-router-dom';
 import React from 'react';
 import Unit from '../Components/Unit';
-
+import logo from '../assets/logo.jpg';
+import Header from '../Components/Header';
 
 export default function Course() {
     return(
         <div className={styles.page}>
             <div className={styles.shell}>
-                <header className={styles.header}>
-                    <div className={styles.brandBlock} >
-                        <div className={styles.brandStuff} onClick={() => navigate('/')}>
-                        <div className={styles.brandBadge}>PB</div>
-                            <div>
-                                <p className={styles.eyebrow}>Learning dashboard</p>
-                                <h1>Panda Bear Academy</h1>
-                            </div>
-                        </div>
-                        <div className={styles.headerlinks}>
-                            <Link to="/home" className={styles.headerlink} ><p>🏠</p> Home</Link>
-                            <Link to="/courses" className={styles.courseLink}><p>📚</p> Courses</Link>
-                        </div>
-                    </div>
-                
-                    <div className={styles.headerActions}>
-                        <div className={styles.starbits}>
-                        <span>★</span> 5
-                        </div>
-                        <button className={styles.optionsBtn}>Donate</button>
-                    </div>
-                </header>
+                <Header styles={styles} />
                 <main className={styles.content}>
                     <section className={styles.descriptionSection}>
                         <div className={styles.description}>
