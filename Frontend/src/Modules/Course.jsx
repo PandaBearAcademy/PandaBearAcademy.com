@@ -2,6 +2,7 @@ import styles from '../css/course.module.css';
 import { Link, useNavigate } from 'react-router-dom';
 import React from 'react';
 import Unit from '../Components/Unit';
+import logo from '../assets/logo.jpg';
 
 
 export default function Course() {
@@ -11,7 +12,7 @@ export default function Course() {
                 <header className={styles.header}>
                     <div className={styles.brandBlock} >
                         <div className={styles.brandStuff} onClick={() => navigate('/')}>
-                        <div className={styles.brandBadge}>PB</div>
+                            <img src={logo} alt="Panda Bear Academy Logo" className={styles.brandLogo} />
                             <div>
                                 <p className={styles.eyebrow}>Learning dashboard</p>
                                 <h1>Panda Bear Academy</h1>
