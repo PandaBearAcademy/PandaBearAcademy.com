@@ -3,9 +3,10 @@
 model User {
   id                Int      @id @default(autoincrement())
   email             String   @unique
+  googleId          String?
   username          String?
   name              String?
-  password          String
+  password          String?
   streak            Int      @default(0)
   enrollment        Enrollment[]
   createdAt         DateTime @default(now())

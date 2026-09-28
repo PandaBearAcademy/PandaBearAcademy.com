@@ -395,6 +395,13 @@
                   "kind": "scalar"
                 }
               },
+              "googleId": {
+                "nullable": true,
+                "type": {
+                  "codecId": "pg/text@1",
+                  "kind": "scalar"
+                }
+              },
               "id": {
                 "nullable": false,
                 "type": {
@@ -410,7 +417,7 @@
                 }
               },
               "password": {
-                "nullable": false,
+                "nullable": true,
                 "type": {
                   "codecId": "pg/text@1",
                   "kind": "scalar"
@@ -462,6 +469,9 @@
                 },
                 "email": {
                   "column": "email"
+                },
+                "googleId": {
+                  "column": "googleId"
                 },
                 "id": {
                   "column": "id"
@@ -802,6 +812,11 @@
                   "nativeType": "text",
                   "nullable": false
                 },
+                "googleId": {
+                  "codecId": "pg/text@1",
+                  "nativeType": "text",
+                  "nullable": true
+                },
                 "id": {
                   "codecId": "pg/int4@1",
                   "default": {
@@ -819,7 +834,7 @@
                 "password": {
                   "codecId": "pg/text@1",
                   "nativeType": "text",
-                  "nullable": false
+                  "nullable": true
                 },
                 "streak": {
                   "codecId": "pg/int4@1",
@@ -862,7 +877,7 @@
         "kind": "postgres-schema"
       }
     },
-    "storageHash": "53af4bb5a389c32016878f5788f8651a2b21df9af241928877e42ac5b61c9df8"
+    "storageHash": "b6e7748bfca8315598efeca9c18430ef3db8496b27baa5caa4810ad446fcc906"
   },
   "execution": {
     "executionHash": "eab594c7ae5d605f3ec23efb87abfb84738b65ef9804d7f3134ad6d40ab02ce0",
