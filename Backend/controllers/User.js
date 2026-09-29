@@ -1,8 +1,8 @@
 import { db } from "../src/prisma/db.ts";
-import { asyncHandler } from "express-async-handler";
+import asyncHandler from "express-async-handler";
+import bcrypt from "bcryptjs";
 import { body, validationResult } from "express-validator";
-import { bcrypt } from "bcryptjs";
-import { JsonWebTokenError, jwt } from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 
 
 export const getAllUsers = asyncHandler(async (req, res) => {
@@ -76,3 +76,4 @@ export const logIn = asyncHandler(async (req, res) => {
     })
 
 })
+
