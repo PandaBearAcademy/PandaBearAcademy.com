@@ -1,17 +1,36 @@
 import express from "express";
-import { db } from "./src/prisma/db.ts";
+const router = express.Router();
+import {getAllUsers, userPost, logIn} from './controllers/User.js'
+import passport from "passport";
+import './config/passport.js'
 
-const app = express();
-app.use(express.json());
 
-app.get("/users", async (req, res) => {
-  const users = await db.orm.public.User.select("id", "email", "name").all();
-  res.json(users);
-});
+router.get("/users/v1", getAllUsers);
+router.post("/users/v1", userPost);
+router.post("/users/v1/login", logIn)
 
-app.post("/users", async (req, res) => {
-  const user = await db.orm.public.User.create(req.body);
-  res.json(user);
-});
 
-app.listen(3000, () => console.log("Server running on port 3000"));
+router.get(
+    '/auth/google',
+    passport.authenticate('google', {scope: ['profile', 'email']})
+)
+router.get(
+    '/auth/google/callback',
+    passport.authenticate('google', {
+        failureRedirect: `${process.env.CLIENT_URL}/sign-in` //remember to add an actual url redirect or client url
+    }),
+    (req,res) => res.redirect(`${process.env.CLIENT_URL}/home`) //remember to add an actual url redirect or client url
+)
+router.get('/auth/me', async (req, res) => {
+    if (!req.isAuthenticated) return res.status(401).json({user: null, message: false})
+    const user = req.user
+    res.json({ user: user})
+})
+router.post('/auth/logout', async (req, res, next) => {
+    req.logOut((err) => {
+        if(err) return err
+        req.session.destroy(() => res.sendStatus(204))
+    })
+})
+
+export const indexRouter = router
